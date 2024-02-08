@@ -8,3 +8,17 @@ NLP parser -> network of decision making clauses -> LSTM models -> return the co
 The 'Execute' button will execute this generated query, fetch the result from the MySQL database and display the table to the user.
 
 ![nl-sql.png](nl-sql.png)
+
+# Example
+
+## User question:
+show airports in france
+
+## Converted SQL query:
+SELECT airport FROM flight WHERE country = "france" ;
+
+## User question:
+Create view v1 that show songs of singer taylor swift
+
+## Converted SQL query:
+CREATE VIEW [v1] AS SELECT songs FROM singer WHERE name = "taylor swift";
