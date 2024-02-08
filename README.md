@@ -11,14 +11,14 @@ The 'Execute' button will execute this generated query, fetch the result from th
 
 # Example
 
-## User question:
+### User question:
 show airports in france
 
-## Converted SQL query:
+### Converted SQL query:
 SELECT airport FROM flight WHERE country = "france" ;
 
-## User question:
+### User question:
 Create view v1 that show songs of singer taylor swift
 
-## Converted SQL query:
+### Converted SQL query:
 CREATE VIEW [v1] AS SELECT songs FROM singer WHERE name = "taylor swift";
