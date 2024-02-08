@@ -22,3 +22,9 @@ Create view v1 that show songs of singer taylor swift
 
 ### Converted SQL query:
 CREATE VIEW [v1] AS SELECT songs FROM singer WHERE name = "taylor swift";
+
+### User question:
+give the singers from india
+
+### Converted SQL query:
+SELECT * FROM singer WHERE country = "india" ;
